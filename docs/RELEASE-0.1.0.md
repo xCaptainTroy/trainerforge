@@ -49,10 +49,6 @@ TrainerForge contains no WeMod code, assets, trainer content, or branding.
 - No game catalog, overlay, scripting runtime, or remote service.
 - Exact-value scanning only; unknown-value scans are not implemented.
 - Elevated/protected games may be unreadable without matching privileges.
-- The CI workflow is provided as `docs/ci-example.yml` because the publishing
-  token lacked the GitHub `workflow` scope; see
-  [DEVELOPMENT.md](https://github.com/xCaptainTroy/trainerforge/blob/main/docs/DEVELOPMENT.md#continuous-integration)
-  to enable it.
 
 ## Verify the release
 
