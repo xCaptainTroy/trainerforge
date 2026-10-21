@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trainerforge"
+version = "0.1.0"
+description = "Open-source, local-first memory trainer toolkit for single-player Windows games"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "TrainerForge contributors" }]
+keywords = ["game-trainer", "memory", "windows", "single-player", "reverse-engineering"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Win32 (MS Windows)",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: Microsoft :: Windows",
+  "Programming Language :: Python :: 3",
+  "Topic :: Games/Entertainment",
+  "Topic :: Utilities",
+]
+dependencies = []
+
+[project.scripts]
+trainerforge = "trainerforge.app:main"
+
+[project.gui-scripts]
+trainerforge-gui = "trainerforge.app:main"
+
+[tool.setuptools.packages.find]
+include = ["trainerforge*"]
+
+[tool.setuptools.package-data]
+trainerforge = ["assets/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = [
+  "integration: tests that launch a helper process and read its memory",
+]
