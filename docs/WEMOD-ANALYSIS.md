@@ -136,7 +136,7 @@ network layers:
 | Overlay | Not implemented in v0.1 |
 | Account, subscription, ads | None |
 | Capture/analytics/telemetry | None |
-| Native hotkey/overlay DLLs | `RegisterHotKey` and Tk polling |
+| Native hotkey/overlay DLLs | `RegisterHotKey` on a hidden Win32 message window |
 | Prebuilt cheats | None; no game-specific content shipped |
 
 The result is not feature parity with a commercial catalog. It is a transparent

@@ -168,7 +168,7 @@ Tkinter UI
    ├── pointers.py    module+offset and multi-level pointer resolution
    ├── table.py       JSON table model and validation
    ├── freezer.py     background writer for frozen values
-   ├── hotkeys.py     RegisterHotKey + Tk message polling
+   ├── hotkeys.py     hidden Win32 hotkey window + Tk-side dispatch
    └── winapi.py      OpenProcess, ReadProcessMemory, VirtualQueryEx, …
 ```
 

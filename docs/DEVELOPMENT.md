@@ -23,7 +23,7 @@ python -m pytest -q
 | `trainerforge/core/pointers.py` | base expressions and multi-level pointer chains. |
 | `trainerforge/core/table.py` | schema, validation, atomic JSON save/load. |
 | `trainerforge/core/freezer.py` | background writer. |
-| `trainerforge/core/hotkeys.py` | global hotkey registration and polling. |
+| `trainerforge/core/hotkeys.py` | hidden hotkey window, registration, and dispatch. |
 | `trainerforge/core/safety.py` | critical-process and anti-cheat guardrail. |
 | `trainerforge/ui/main_window.py` | scanner/table window and orchestration. |
 | `trainerforge/ui/dialogs.py` | safety notice and entry editor. |
